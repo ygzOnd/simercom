@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simercom | Endüstriyel Otomasyon ve Elektronik Çözümler</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+
+            <a href="#anasayfa" class="logo">
+                <img src="images/logo.png" alt="Simercom">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#anasayfa">Anasayfa</a>
+                <a href="#kurumsal">Kurumsal</a>
+                <a href="#hizmetler">Hizmetler</a>
+                <a href="#atolyeler">Atölyeler</a>
+                <a href="#arge">AR-GE & Proje</a>
+                <a href="#iletisim">İletişim</a>
+            </div>
+
+            <a href="#iletisim" class="nav-button">
+                İletişime Geç
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <header class="hero" id="anasayfa">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <span class="hero-label">
+                    <span></span>
+                    ENDÜSTRİYEL TEKNOLOJİ ÇÖZÜMLERİ
+                </span>
+
+                <h1>
+                    Endüstriyel Sistemlerde
+                    <strong>Güçlü Çözümler.</strong>
+                </h1>
+
+                <div class="hero-buttons">
+
+                    <a href="#hizmetler" class="btn-primary">
+                        Hizmetlerimizi İncele
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#iletisim" class="btn-outline">
+                        Bize Ulaşın
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-side-info">
+
+                <div class="hero-line"></div>
+
+                <span>SIMERCOM</span>
+
+            </div>
+
+        </div>
+
+        <div class="hero-bottom">
+
+            <div class="container hero-bottom-inner">
+
+                <span>ENDÜSTRİYEL OTOMASYON</span>
+                <span>ELEKTRONİK SİSTEMLER</span>
+                <span>AR-GE & MÜHENDİSLİK</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="slider-section">
+
+        <div class="slider" id="slider">
+
+            <div class="slide active">
+
+                <div class="container slide-container">
+
+                    <div class="slide-number">01</div>
+
+                    <div class="slide-content">
+
+                        <span>01 / 03</span>
+
+                        <h2>
+                            Endüstriyel<br>
+                            <strong>Otomasyon</strong>
+                        </h2>
+
+                    </div>
+
+                    <div class="slide-icon">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <div class="container slide-container">
+
+                    <div class="slide-number">02</div>
+
+                    <div class="slide-content">
+
+                        <span>02 / 03</span>
+
+                        <h2>
+                            Servo Motor<br>
+                            <strong>Çözümleri</strong>
+                        </h2>
+
+                    </div>
+
+                    <div class="slide-icon">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slide">
+
+                <div class="container slide-container">
+
+                    <div class="slide-number">03</div>
+
+                    <div class="slide-content">
+
+                        <span>03 / 03</span>
+
+                        <h2>
+                            Robotik<br>
+                            <strong>Teknolojiler</strong>
+                        </h2>
+
+                    </div>
+
+                    <div class="slide-icon">
+                        <i class="bi bi-robot"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slider-controls">
+
+                <button class="slider-prev" id="prevSlide">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <button class="slider-next" id="nextSlide">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about-section" id="kurumsal">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+
+                <img src="images/erisen-plaza-card.jpg" alt="Simercom Erişen Plaza">
+
+                <div class="image-badge">
+                    <strong>SIMERCOM</strong>
+                    <span>ENDÜSTRİYEL ÇÖZÜMLER</span>
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-label">
+                    <span></span>
+                    SİMERCOM HAKKINDA
+                </span>
+
+                <h2>
+                    Teknolojiye Değer,
+                    <strong>Üretime Güç Katıyoruz.</strong>
+                </h2>
+
+                <div class="about-features">
+
+                    <div>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>Profesyonel Teknik Servis</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>Endüstriyel Sistem Uzmanlığı</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>Bakım ve Onarım Çözümleri</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>AR-GE ve Mühendislik</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services-section" id="hizmetler">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        <span></span>
+                        HİZMETLERİMİZ
+                    </span>
+
+                    <h2>
+                        Endüstriyel Sistemler İçin
+                        <strong>Teknik Çözümler</strong>
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div class="service-top">
+                        <span>01</span>
+                        <i class="bi bi-robot"></i>
+                    </div>
+
+                    <h3>Robot Teknolojileri</h3>
+
+                    <a href="#iletisim">
+                        Detaylı Bilgi
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+                        <span>02</span>
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+
+                    <h3>Servo Motor</h3>
+
+                    <a href="#iletisim">
+                        Detaylı Bilgi
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+                        <span>03</span>
+                        <i class="bi bi-pc-display"></i>
+                    </div>
+
+                    <h3>Endüstriyel PC</h3>
+
+                    <a href="#iletisim">
+                        Detaylı Bilgi
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+                        <span>04</span>
+                        <i class="bi bi-cpu"></i>
+                    </div>
+
+                    <h3>PLC Sistemleri</h3>
+
+                    <a href="#iletisim">
+                        Detaylı Bilgi
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+                        <span>05</span>
+                        <i class="bi bi-speedometer2"></i>
+                    </div>
+
+                    <h3>Sürücü Sistemleri</h3>
+
+                    <a href="#iletisim">
+                        Detaylı Bilgi
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="service-card">
+
+                    <div class="service-top">
+                        <span>06</span>
+                        <i class="bi bi-tools"></i>
+                    </div>
+
+                    <h3>Teknik Servis</h3>
+
+                    <a href="#iletisim">
+                        Servis Talebi
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="workshops-section" id="atolyeler">
+
+        <div class="container">
+
+            <div class="workshop-header">
+
+                <div>
+
+                    <span class="section-label light">
+                        <span></span>
+                        TEKNİK ALTYAPIMIZ
+                    </span>
+
+                    <h2>
+                        Uzmanlık Alanlarımız
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="workshop-grid">
+
+                <div class="workshop-card">
+
+                    <span>01</span>
+
+                    <i class="bi bi-speedometer"></i>
+
+                    <h3>Siemens Sürücü Atölyemiz</h3>
+
+                </div>
+
+                <div class="workshop-card">
+
+                    <span>02</span>
+
+                    <i class="bi bi-motherboard"></i>
+
+                    <h3>Elektronik Atölyemiz</h3>
+
+                </div>
+
+                <div class="workshop-card">
+
+                    <span>03</span>
+
+                    <i class="bi bi-gear"></i>
+
+                    <h3>Servo Motor Atölyemiz</h3>
+
+                </div>
+
+                <div class="workshop-card">
+
+                    <span>04</span>
+
+                    <i class="bi bi-pc-display-horizontal"></i>
+
+                    <h3>PLC ve PC Atölyemiz</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="arge-section" id="arge">
+
+        <div class="container arge-grid">
+
+            <div class="arge-content">
+
+                <span class="section-label">
+                    <span></span>
+                    AR-GE & MÜHENDİSLİK
+                </span>
+
+                <h2>
+                    İhtiyaca Özel
+                    <strong>Mühendislik Çözümleri</strong>
+                </h2>
+
+                <div class="arge-list">
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        <span>AR-GE Çalışmaları</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        <span>Mühendislik Çözümleri</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        <span>Endüstriyel Projeler</span>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-check-lg"></i>
+                        <span>Sistem Geliştirme</span>
+                    </div>
+
+                </div>
+
+                <a href="#iletisim" class="btn-primary">
+                    Projenizi Konuşalım
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="arge-visual">
+
+                <div class="technical-grid"></div>
+
+                <div class="arge-center">
+                    <span>SIMER</span>
+                    <strong>COM</strong>
+                </div>
+
+                <div class="tech-box box-one">
+                    <i class="bi bi-cpu"></i>
+                    <span>PLC</span>
+                </div>
+
+                <div class="tech-box box-two">
+                    <i class="bi bi-gear"></i>
+                    <span>SERVO</span>
+                </div>
+
+                <div class="tech-box box-three">
+                    <i class="bi bi-diagram-3"></i>
+                    <span>CONTROL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section" id="iletisim">
+
+        <div class="container contact-wrapper">
+
+            <div class="contact-title">
+
+                <span class="section-label">
+                    <span></span>
+                    İLETİŞİM
+                </span>
+
+                <h2>
+                    Sistemleriniz İçin
+                    <strong>Yanınızdayız.</strong>
+                </h2>
+
+            </div>
+
+            <div class="contact-cards">
+
+                <a href="tel:+902163884486" class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+
+                    <div>
+                        <span>TELEFON</span>
+                        <strong>+90 216 388 44 86</strong>
+                    </div>
+
+                    <i class="bi bi-arrow-up-right arrow"></i>
+
+                </a>
+
+                <a href="mailto:info@simercom.com" class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+
+                    <div>
+                        <span>E-POSTA</span>
+                        <strong>info@simercom.com</strong>
+                    </div>
+
+                    <i class="bi bi-arrow-up-right arrow"></i>
+
+                </a>
+
+                <div class="contact-card address-card">
+
+                    <div class="contact-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+
+                    <div>
+                        <span>ADRES</span>
+                        <strong>
+                            Zümrütevler Mah. Adalar Sok. No:15
+                            Erişen Plaza - Maltepe / İstanbul
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container footer-top">
+
+            <div class="footer-brand">
+
+                <img src="images/logo.png" alt="Simercom">
+
+                <div class="footer-brand-name">
+                    SIMERCOM
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Menü</h4>
+
+                <a href="#anasayfa">Anasayfa</a>
+                <a href="#kurumsal">Kurumsal</a>
+                <a href="#hizmetler">Hizmetler</a>
+                <a href="#atolyeler">Atölyeler</a>
+                <a href="#arge">AR-GE & Proje</a>
+                <a href="#iletisim">İletişim</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Hizmetler</h4>
+
+                <a href="#hizmetler">Robot Teknolojileri</a>
+                <a href="#hizmetler">Servo Motor</a>
+                <a href="#hizmetler">Endüstriyel PC</a>
+                <a href="#hizmetler">PLC Sistemleri</a>
+                <a href="#hizmetler">Sürücü Sistemleri</a>
+                <a href="#hizmetler">Teknik Servis</a>
+
+            </div>
+
+            <div class="footer-column footer-contact">
+
+                <h4>İletişim</h4>
+
+                <a href="tel:+902163884486">
+                    <i class="bi bi-telephone"></i>
+                    +90 216 388 44 86
+                </a>
+
+                <a href="mailto:info@simercom.com">
+                    <i class="bi bi-envelope"></i>
+                    info@simercom.com
+                </a>
+
+                <div class="footer-address">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>
+                        Zümrütevler Mah. Adalar Sok. No:15
+                        Erişen Plaza - Maltepe / İstanbul
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-inner">
+
+                <span>
+                    © 2026 Simercom. Tüm hakları saklıdır.
+                </span>
+
+                <span>
+                    Endüstriyel Teknoloji & Mühendislik
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+            });
+
+        });
+
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+
+        const nextButton = document.getElementById("nextSlide");
+        const prevButton = document.getElementById("prevSlide");
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+
+            slides.forEach(slide => {
+                slide.classList.remove("active");
+            });
+
+            dots.forEach(dot => {
+                dot.classList.remove("active");
+            });
+
+            slides[currentSlide].classList.add("active");
+            dots[currentSlide].classList.add("active");
+        }
+
+        nextButton.addEventListener("click", () => {
+            showSlide(currentSlide + 1);
+        });
+
+        prevButton.addEventListener("click", () => {
+            showSlide(currentSlide - 1);
+        });
+
+        dots.forEach((dot, index) => {
+
+            dot.addEventListener("click", () => {
+                showSlide(index);
+            });
+
+        });
+
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 6000);
+
+        const observer = new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+        document.querySelectorAll(
+            ".service-card, .workshop-card, .about-content, .about-image, .arge-content"
+        ).forEach(element => {
+
+            observer.observe(element);
+
+        });
+
+    </script>
+
+</body>
+</html>
