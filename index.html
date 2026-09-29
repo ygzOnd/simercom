@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -21,6 +24,7 @@
 <body>
 
     <nav class="navbar">
+
         <div class="container nav-container">
 
             <a href="#anasayfa" class="logo">
@@ -32,21 +36,62 @@
             </button>
 
             <div class="nav-menu" id="navMenu">
-                <a href="#anasayfa">Anasayfa</a>
-                <a href="#kurumsal">Kurumsal</a>
-                <a href="#hizmetler">Hizmetler</a>
-                <a href="#atolyeler">Atölyeler</a>
-                <a href="#arge">AR-GE & Proje</a>
-                <a href="#iletisim">İletişim</a>
+
+                <a href="#anasayfa" data-tr="Anasayfa" data-en="Home">
+                    Anasayfa
+                </a>
+
+                <a href="#kurumsal" data-tr="Kurumsal" data-en="Corporate">
+                    Kurumsal
+                </a>
+
+                <a href="#hizmetler" data-tr="Hizmetler" data-en="Services">
+                    Hizmetler
+                </a>
+
+                <a href="#atolyeler" data-tr="Atölyeler" data-en="Workshops">
+                    Atölyeler
+                </a>
+
+                <a href="#arge" data-tr="AR-GE & Proje" data-en="R&D & Projects">
+                    AR-GE & Proje
+                </a>
+
+                <a href="#iletisim" data-tr="İletişim" data-en="Contact">
+                    İletişim
+                </a>
+
             </div>
 
-            <a href="#iletisim" class="nav-button">
-                İletişime Geç
-                <i class="bi bi-arrow-up-right"></i>
-            </a>
+            <div class="nav-right">
+
+                <div class="language-selector">
+
+                    <button class="language-btn active" data-language="tr">
+                        <span class="flag"></span>
+                        <span>TR</span>
+                    </button>
+
+                    <button class="language-btn" data-language="en">
+                        <span class="flag"></span>
+                        <span>EN</span>
+                    </button>
+
+                </div>
+
+                <a href="#iletisim" class="nav-button">
+                    <span data-tr="İletişime Geç" data-en="Contact Us">
+                        İletişime Geç
+                    </span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </a>
+
+            </div>
 
         </div>
+
     </nav>
+
 
     <header class="hero" id="anasayfa">
 
@@ -58,23 +103,34 @@
 
                 <span class="hero-label">
                     <span></span>
-                    ENDÜSTRİYEL TEKNOLOJİ ÇÖZÜMLERİ
+                    <span data-tr="ENDÜSTRİYEL TEKNOLOJİ ÇÖZÜMLERİ" data-en="INDUSTRIAL TECHNOLOGY SOLUTIONS">
+                        ENDÜSTRİYEL TEKNOLOJİ ÇÖZÜMLERİ
+                    </span>
                 </span>
 
                 <h1>
-                    Endüstriyel Sistemlerde
-                    <strong>Güçlü Çözümler.</strong>
+                    <span data-tr="Endüstriyel Sistemlerde" data-en="Powerful Solutions">
+                        Endüstriyel Sistemlerde
+                    </span>
+
+                    <strong data-tr="Güçlü Çözümler." data-en="For Industrial Systems.">
+                        Güçlü Çözümler.
+                    </strong>
                 </h1>
 
                 <div class="hero-buttons">
 
                     <a href="#hizmetler" class="btn-primary">
-                        Hizmetlerimizi İncele
+                        <span data-tr="Hizmetlerimizi İncele" data-en="Explore Our Services">
+                            Hizmetlerimizi İncele
+                        </span>
                         <i class="bi bi-arrow-right"></i>
                     </a>
 
                     <a href="#iletisim" class="btn-outline">
-                        Bize Ulaşın
+                        <span data-tr="Bize Ulaşın" data-en="Contact Us">
+                            Bize Ulaşın
+                        </span>
                     </a>
 
                 </div>
@@ -95,15 +151,24 @@
 
             <div class="container hero-bottom-inner">
 
-                <span>ENDÜSTRİYEL OTOMASYON</span>
-                <span>ELEKTRONİK SİSTEMLER</span>
-                <span>AR-GE & MÜHENDİSLİK</span>
+                <span data-tr="ENDÜSTRİYEL OTOMASYON" data-en="INDUSTRIAL AUTOMATION">
+                    ENDÜSTRİYEL OTOMASYON
+                </span>
+
+                <span data-tr="ELEKTRONİK SİSTEMLER" data-en="ELECTRONIC SYSTEMS">
+                    ELEKTRONİK SİSTEMLER
+                </span>
+
+                <span data-tr="AR-GE & MÜHENDİSLİK" data-en="R&D & ENGINEERING">
+                    AR-GE & MÜHENDİSLİK
+                </span>
 
             </div>
 
         </div>
 
     </header>
+
 
     <section class="slider-section">
 
@@ -120,8 +185,13 @@
                         <span>01 / 03</span>
 
                         <h2>
-                            Endüstriyel<br>
-                            <strong>Otomasyon</strong>
+                            <span data-tr="Endüstriyel" data-en="Industrial">
+                                Endüstriyel
+                            </span>
+                            <br>
+                            <strong data-tr="Otomasyon" data-en="Automation">
+                                Otomasyon
+                            </strong>
                         </h2>
 
                     </div>
@@ -134,6 +204,7 @@
 
             </div>
 
+
             <div class="slide">
 
                 <div class="container slide-container">
@@ -145,8 +216,13 @@
                         <span>02 / 03</span>
 
                         <h2>
-                            Servo Motor<br>
-                            <strong>Çözümleri</strong>
+                            <span data-tr="Servo Motor" data-en="Servo Motor">
+                                Servo Motor
+                            </span>
+                            <br>
+                            <strong data-tr="Çözümleri" data-en="Solutions">
+                                Çözümleri
+                            </strong>
                         </h2>
 
                     </div>
@@ -159,6 +235,7 @@
 
             </div>
 
+
             <div class="slide">
 
                 <div class="container slide-container">
@@ -170,8 +247,13 @@
                         <span>03 / 03</span>
 
                         <h2>
-                            Robotik<br>
-                            <strong>Teknolojiler</strong>
+                            <span data-tr="Robotik" data-en="Robotics">
+                                Robotik
+                            </span>
+                            <br>
+                            <strong data-tr="Teknolojiler" data-en="Technologies">
+                                Teknolojiler
+                            </strong>
                         </h2>
 
                     </div>
@@ -183,6 +265,7 @@
                 </div>
 
             </div>
+
 
             <div class="slider-controls">
 
@@ -206,6 +289,7 @@
 
     </section>
 
+
     <section class="about-section" id="kurumsal">
 
         <div class="container about-grid">
@@ -215,44 +299,67 @@
                 <img src="images/erisen-plaza-card.jpg" alt="Simercom Erişen Plaza">
 
                 <div class="image-badge">
+
                     <strong>SIMERCOM</strong>
-                    <span>ENDÜSTRİYEL ÇÖZÜMLER</span>
+
+                    <span data-tr="ENDÜSTRİYEL ÇÖZÜMLER" data-en="INDUSTRIAL SOLUTIONS">
+                        ENDÜSTRİYEL ÇÖZÜMLER
+                    </span>
+
                 </div>
 
             </div>
+
 
             <div class="about-content">
 
                 <span class="section-label">
                     <span></span>
-                    SİMERCOM HAKKINDA
+
+                    <span data-tr="SİMERCOM HAKKINDA" data-en="ABOUT SIMERCOM">
+                        SİMERCOM HAKKINDA
+                    </span>
+
                 </span>
 
                 <h2>
-                    Teknolojiye Değer,
-                    <strong>Üretime Güç Katıyoruz.</strong>
+                    <span data-tr="Teknolojiye Değer," data-en="Adding Value to Technology,">
+                        Teknolojiye Değer,
+                    </span>
+
+                    <strong data-tr="Üretime Güç Katıyoruz." data-en="Powering Production.">
+                        Üretime Güç Katıyoruz.
+                    </strong>
                 </h2>
 
                 <div class="about-features">
 
                     <div>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Profesyonel Teknik Servis</span>
+                        <span data-tr="Profesyonel Teknik Servis" data-en="Professional Technical Service">
+                            Profesyonel Teknik Servis
+                        </span>
                     </div>
 
                     <div>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Endüstriyel Sistem Uzmanlığı</span>
+                        <span data-tr="Endüstriyel Sistem Uzmanlığı" data-en="Industrial Systems Expertise">
+                            Endüstriyel Sistem Uzmanlığı
+                        </span>
                     </div>
 
                     <div>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Bakım ve Onarım Çözümleri</span>
+                        <span data-tr="Bakım ve Onarım Çözümleri" data-en="Maintenance & Repair Solutions">
+                            Bakım ve Onarım Çözümleri
+                        </span>
                     </div>
 
                     <div>
                         <i class="bi bi-check2-circle"></i>
-                        <span>AR-GE ve Mühendislik</span>
+                        <span data-tr="AR-GE ve Mühendislik" data-en="R&D and Engineering">
+                            AR-GE ve Mühendislik
+                        </span>
                     </div>
 
                 </div>
@@ -262,6 +369,7 @@
         </div>
 
     </section>
+
 
     <section class="services-section" id="hizmetler">
 
@@ -273,17 +381,27 @@
 
                     <span class="section-label">
                         <span></span>
-                        HİZMETLERİMİZ
+
+                        <span data-tr="HİZMETLERİMİZ" data-en="OUR SERVICES">
+                            HİZMETLERİMİZ
+                        </span>
+
                     </span>
 
                     <h2>
-                        Endüstriyel Sistemler İçin
-                        <strong>Teknik Çözümler</strong>
+                        <span data-tr="Endüstriyel Sistemler İçin" data-en="Technical Solutions">
+                            Endüstriyel Sistemler İçin
+                        </span>
+
+                        <strong data-tr="Teknik Çözümler" data-en="For Industrial Systems">
+                            Teknik Çözümler
+                        </strong>
                     </h2>
 
                 </div>
 
             </div>
+
 
             <div class="services-grid">
 
@@ -294,14 +412,19 @@
                         <i class="bi bi-robot"></i>
                     </div>
 
-                    <h3>Robot Teknolojileri</h3>
+                    <h3 data-tr="Robot Teknolojileri" data-en="Robotics Technologies">
+                        Robot Teknolojileri
+                    </h3>
 
                     <a href="#iletisim">
-                        Detaylı Bilgi
+                        <span data-tr="Detaylı Bilgi" data-en="More Information">
+                            Detaylı Bilgi
+                        </span>
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
+
 
                 <div class="service-card">
 
@@ -310,14 +433,19 @@
                         <i class="bi bi-gear-wide-connected"></i>
                     </div>
 
-                    <h3>Servo Motor</h3>
+                    <h3 data-tr="Servo Motor" data-en="Servo Motors">
+                        Servo Motor
+                    </h3>
 
                     <a href="#iletisim">
-                        Detaylı Bilgi
+                        <span data-tr="Detaylı Bilgi" data-en="More Information">
+                            Detaylı Bilgi
+                        </span>
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
+
 
                 <div class="service-card">
 
@@ -326,14 +454,19 @@
                         <i class="bi bi-pc-display"></i>
                     </div>
 
-                    <h3>Endüstriyel PC</h3>
+                    <h3 data-tr="Endüstriyel PC" data-en="Industrial PC">
+                        Endüstriyel PC
+                    </h3>
 
                     <a href="#iletisim">
-                        Detaylı Bilgi
+                        <span data-tr="Detaylı Bilgi" data-en="More Information">
+                            Detaylı Bilgi
+                        </span>
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
+
 
                 <div class="service-card">
 
@@ -342,14 +475,19 @@
                         <i class="bi bi-cpu"></i>
                     </div>
 
-                    <h3>PLC Sistemleri</h3>
+                    <h3 data-tr="PLC Sistemleri" data-en="PLC Systems">
+                        PLC Sistemleri
+                    </h3>
 
                     <a href="#iletisim">
-                        Detaylı Bilgi
+                        <span data-tr="Detaylı Bilgi" data-en="More Information">
+                            Detaylı Bilgi
+                        </span>
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
+
 
                 <div class="service-card">
 
@@ -358,14 +496,19 @@
                         <i class="bi bi-speedometer2"></i>
                     </div>
 
-                    <h3>Sürücü Sistemleri</h3>
+                    <h3 data-tr="Sürücü Sistemleri" data-en="Drive Systems">
+                        Sürücü Sistemleri
+                    </h3>
 
                     <a href="#iletisim">
-                        Detaylı Bilgi
+                        <span data-tr="Detaylı Bilgi" data-en="More Information">
+                            Detaylı Bilgi
+                        </span>
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
 
                 </div>
+
 
                 <div class="service-card">
 
@@ -374,10 +517,14 @@
                         <i class="bi bi-tools"></i>
                     </div>
 
-                    <h3>Teknik Servis</h3>
+                    <h3 data-tr="Teknik Servis" data-en="Technical Service">
+                        Teknik Servis
+                    </h3>
 
                     <a href="#iletisim">
-                        Servis Talebi
+                        <span data-tr="Servis Talebi" data-en="Service Request">
+                            Servis Talebi
+                        </span>
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
 
@@ -388,6 +535,7 @@
         </div>
 
     </section>
+
 
     <section class="workshops-section" id="atolyeler">
 
@@ -399,16 +547,21 @@
 
                     <span class="section-label light">
                         <span></span>
-                        TEKNİK ALTYAPIMIZ
+
+                        <span data-tr="TEKNİK ALTYAPIMIZ" data-en="OUR TECHNICAL INFRASTRUCTURE">
+                            TEKNİK ALTYAPIMIZ
+                        </span>
+
                     </span>
 
-                    <h2>
+                    <h2 data-tr="Uzmanlık Alanlarımız" data-en="Our Areas of Expertise">
                         Uzmanlık Alanlarımız
                     </h2>
 
                 </div>
 
             </div>
+
 
             <div class="workshop-grid">
 
@@ -418,9 +571,12 @@
 
                     <i class="bi bi-speedometer"></i>
 
-                    <h3>Siemens Sürücü Atölyemiz</h3>
+                    <h3 data-tr="Siemens Sürücü Atölyemiz" data-en="Siemens Drive Workshop">
+                        Siemens Sürücü Atölyemiz
+                    </h3>
 
                 </div>
+
 
                 <div class="workshop-card">
 
@@ -428,9 +584,12 @@
 
                     <i class="bi bi-motherboard"></i>
 
-                    <h3>Elektronik Atölyemiz</h3>
+                    <h3 data-tr="Elektronik Atölyemiz" data-en="Electronics Workshop">
+                        Elektronik Atölyemiz
+                    </h3>
 
                 </div>
+
 
                 <div class="workshop-card">
 
@@ -438,9 +597,12 @@
 
                     <i class="bi bi-gear"></i>
 
-                    <h3>Servo Motor Atölyemiz</h3>
+                    <h3 data-tr="Servo Motor Atölyemiz" data-en="Servo Motor Workshop">
+                        Servo Motor Atölyemiz
+                    </h3>
 
                 </div>
+
 
                 <div class="workshop-card">
 
@@ -448,7 +610,9 @@
 
                     <i class="bi bi-pc-display-horizontal"></i>
 
-                    <h3>PLC ve PC Atölyemiz</h3>
+                    <h3 data-tr="PLC ve PC Atölyemiz" data-en="PLC & PC Workshop">
+                        PLC ve PC Atölyemiz
+                    </h3>
 
                 </div>
 
@@ -458,6 +622,7 @@
 
     </section>
 
+
     <section class="arge-section" id="arge">
 
         <div class="container arge-grid">
@@ -466,44 +631,69 @@
 
                 <span class="section-label">
                     <span></span>
-                    AR-GE & MÜHENDİSLİK
+
+                    <span data-tr="AR-GE & MÜHENDİSLİK" data-en="R&D & ENGINEERING">
+                        AR-GE & MÜHENDİSLİK
+                    </span>
+
                 </span>
 
                 <h2>
-                    İhtiyaca Özel
-                    <strong>Mühendislik Çözümleri</strong>
+                    <span data-tr="İhtiyaca Özel" data-en="Customized">
+                        İhtiyaca Özel
+                    </span>
+
+                    <strong data-tr="Mühendislik Çözümleri" data-en="Engineering Solutions">
+                        Mühendislik Çözümleri
+                    </strong>
                 </h2>
+
 
                 <div class="arge-list">
 
                     <div>
                         <i class="bi bi-check-lg"></i>
-                        <span>AR-GE Çalışmaları</span>
+                        <span data-tr="AR-GE Çalışmaları" data-en="R&D Studies">
+                            AR-GE Çalışmaları
+                        </span>
                     </div>
 
                     <div>
                         <i class="bi bi-check-lg"></i>
-                        <span>Mühendislik Çözümleri</span>
+                        <span data-tr="Mühendislik Çözümleri" data-en="Engineering Solutions">
+                            Mühendislik Çözümleri
+                        </span>
                     </div>
 
                     <div>
                         <i class="bi bi-check-lg"></i>
-                        <span>Endüstriyel Projeler</span>
+                        <span data-tr="Endüstriyel Projeler" data-en="Industrial Projects">
+                            Endüstriyel Projeler
+                        </span>
                     </div>
 
                     <div>
                         <i class="bi bi-check-lg"></i>
-                        <span>Sistem Geliştirme</span>
+                        <span data-tr="Sistem Geliştirme" data-en="System Development">
+                            Sistem Geliştirme
+                        </span>
                     </div>
 
                 </div>
 
+
                 <a href="#iletisim" class="btn-primary">
-                    Projenizi Konuşalım
+
+                    <span data-tr="Projenizi Konuşalım" data-en="Let's Discuss Your Project">
+                        Projenizi Konuşalım
+                    </span>
+
                     <i class="bi bi-arrow-right"></i>
+
                 </a>
 
             </div>
+
 
             <div class="arge-visual">
 
@@ -535,6 +725,7 @@
 
     </section>
 
+
     <section class="contact-section" id="iletisim">
 
         <div class="container contact-wrapper">
@@ -543,15 +734,25 @@
 
                 <span class="section-label">
                     <span></span>
-                    İLETİŞİM
+
+                    <span data-tr="İLETİŞİM" data-en="CONTACT">
+                        İLETİŞİM
+                    </span>
+
                 </span>
 
                 <h2>
-                    Sistemleriniz İçin
-                    <strong>Yanınızdayız.</strong>
+                    <span data-tr="Sistemleriniz İçin" data-en="We Are Here">
+                        Sistemleriniz İçin
+                    </span>
+
+                    <strong data-tr="Yanınızdayız." data-en="For Your Systems.">
+                        Yanınızdayız.
+                    </strong>
                 </h2>
 
             </div>
+
 
             <div class="contact-cards">
 
@@ -562,13 +763,17 @@
                     </div>
 
                     <div>
-                        <span>TELEFON</span>
+                        <span data-tr="TELEFON" data-en="PHONE">
+                            TELEFON
+                        </span>
+
                         <strong>+90 216 388 44 86</strong>
                     </div>
 
                     <i class="bi bi-arrow-up-right arrow"></i>
 
                 </a>
+
 
                 <a href="mailto:info@simercom.com" class="contact-card">
 
@@ -577,13 +782,17 @@
                     </div>
 
                     <div>
-                        <span>E-POSTA</span>
+                        <span data-tr="E-POSTA" data-en="EMAIL">
+                            E-POSTA
+                        </span>
+
                         <strong>info@simercom.com</strong>
                     </div>
 
                     <i class="bi bi-arrow-up-right arrow"></i>
 
                 </a>
+
 
                 <div class="contact-card address-card">
 
@@ -592,11 +801,16 @@
                     </div>
 
                     <div>
-                        <span>ADRES</span>
+
+                        <span data-tr="ADRES" data-en="ADDRESS">
+                            ADRES
+                        </span>
+
                         <strong>
                             Zümrütevler Mah. Adalar Sok. No:15
                             Erişen Plaza - Maltepe / İstanbul
                         </strong>
+
                     </div>
 
                 </div>
@@ -606,6 +820,7 @@
         </div>
 
     </section>
+
 
     <footer class="footer">
 
@@ -621,35 +836,78 @@
 
             </div>
 
-            <div class="footer-column">
-
-                <h4>Menü</h4>
-
-                <a href="#anasayfa">Anasayfa</a>
-                <a href="#kurumsal">Kurumsal</a>
-                <a href="#hizmetler">Hizmetler</a>
-                <a href="#atolyeler">Atölyeler</a>
-                <a href="#arge">AR-GE & Proje</a>
-                <a href="#iletisim">İletişim</a>
-
-            </div>
 
             <div class="footer-column">
 
-                <h4>Hizmetler</h4>
+                <h4 data-tr="Menü" data-en="Menu">
+                    Menü
+                </h4>
 
-                <a href="#hizmetler">Robot Teknolojileri</a>
-                <a href="#hizmetler">Servo Motor</a>
-                <a href="#hizmetler">Endüstriyel PC</a>
-                <a href="#hizmetler">PLC Sistemleri</a>
-                <a href="#hizmetler">Sürücü Sistemleri</a>
-                <a href="#hizmetler">Teknik Servis</a>
+                <a href="#anasayfa" data-tr="Anasayfa" data-en="Home">
+                    Anasayfa
+                </a>
+
+                <a href="#kurumsal" data-tr="Kurumsal" data-en="Corporate">
+                    Kurumsal
+                </a>
+
+                <a href="#hizmetler" data-tr="Hizmetler" data-en="Services">
+                    Hizmetler
+                </a>
+
+                <a href="#atolyeler" data-tr="Atölyeler" data-en="Workshops">
+                    Atölyeler
+                </a>
+
+                <a href="#arge" data-tr="AR-GE & Proje" data-en="R&D & Projects">
+                    AR-GE & Proje
+                </a>
+
+                <a href="#iletisim" data-tr="İletişim" data-en="Contact">
+                    İletişim
+                </a>
 
             </div>
+
+
+            <div class="footer-column">
+
+                <h4 data-tr="Hizmetler" data-en="Services">
+                    Hizmetler
+                </h4>
+
+                <a href="#hizmetler" data-tr="Robot Teknolojileri" data-en="Robotics Technologies">
+                    Robot Teknolojileri
+                </a>
+
+                <a href="#hizmetler" data-tr="Servo Motor" data-en="Servo Motors">
+                    Servo Motor
+                </a>
+
+                <a href="#hizmetler" data-tr="Endüstriyel PC" data-en="Industrial PC">
+                    Endüstriyel PC
+                </a>
+
+                <a href="#hizmetler" data-tr="PLC Sistemleri" data-en="PLC Systems">
+                    PLC Sistemleri
+                </a>
+
+                <a href="#hizmetler" data-tr="Sürücü Sistemleri" data-en="Drive Systems">
+                    Sürücü Sistemleri
+                </a>
+
+                <a href="#hizmetler" data-tr="Teknik Servis" data-en="Technical Service">
+                    Teknik Servis
+                </a>
+
+            </div>
+
 
             <div class="footer-column footer-contact">
 
-                <h4>İletişim</h4>
+                <h4 data-tr="İletişim" data-en="Contact">
+                    İletişim
+                </h4>
 
                 <a href="tel:+902163884486">
                     <i class="bi bi-telephone"></i>
@@ -662,26 +920,30 @@
                 </a>
 
                 <div class="footer-address">
+
                     <i class="bi bi-geo-alt"></i>
+
                     <span>
                         Zümrütevler Mah. Adalar Sok. No:15
                         Erişen Plaza - Maltepe / İstanbul
                     </span>
+
                 </div>
 
             </div>
 
         </div>
 
+
         <div class="footer-bottom">
 
             <div class="container footer-bottom-inner">
 
-                <span>
+                <span data-tr="© 2026 Simercom. Tüm hakları saklıdır." data-en="© 2026 Simercom. All rights reserved.">
                     © 2026 Simercom. Tüm hakları saklıdır.
                 </span>
 
-                <span>
+                <span data-tr="Endüstriyel Teknoloji & Mühendislik" data-en="Industrial Technology & Engineering">
                     Endüstriyel Teknoloji & Mühendislik
                 </span>
 
@@ -690,6 +952,7 @@
         </div>
 
     </footer>
+
 
     <script>
 
@@ -700,6 +963,7 @@
             navMenu.classList.toggle("active");
         });
 
+
         document.querySelectorAll(".nav-menu a").forEach(link => {
 
             link.addEventListener("click", () => {
@@ -708,6 +972,7 @@
 
         });
 
+
         const slides = document.querySelectorAll(".slide");
         const dots = document.querySelectorAll(".dot");
 
@@ -715,6 +980,7 @@
         const prevButton = document.getElementById("prevSlide");
 
         let currentSlide = 0;
+
 
         function showSlide(index) {
 
@@ -736,15 +1002,19 @@
 
             slides[currentSlide].classList.add("active");
             dots[currentSlide].classList.add("active");
+
         }
+
 
         nextButton.addEventListener("click", () => {
             showSlide(currentSlide + 1);
         });
 
+
         prevButton.addEventListener("click", () => {
             showSlide(currentSlide - 1);
         });
+
 
         dots.forEach((dot, index) => {
 
@@ -754,9 +1024,11 @@
 
         });
 
+
         setInterval(() => {
             showSlide(currentSlide + 1);
         }, 6000);
+
 
         const observer = new IntersectionObserver(
             entries => {
@@ -775,6 +1047,7 @@
             }
         );
 
+
         document.querySelectorAll(
             ".service-card, .workshop-card, .about-content, .about-image, .arge-content"
         ).forEach(element => {
@@ -783,7 +1056,71 @@
 
         });
 
+
+        const languageButtons = document.querySelectorAll(".language-btn");
+
+
+        function setLanguage(language) {
+
+            document.documentElement.lang = language;
+
+            document.querySelectorAll("[data-tr][data-en]").forEach(element => {
+
+                if (language === "tr") {
+                    element.textContent = element.dataset.tr;
+                } else {
+                    element.textContent = element.dataset.en;
+                }
+
+            });
+
+
+            languageButtons.forEach(button => {
+
+                button.classList.remove("active");
+
+                if (button.dataset.language === language) {
+                    button.classList.add("active");
+                }
+
+            });
+
+
+            if (language === "tr") {
+
+                document.title = "Simercom | Endüstriyel Otomasyon ve Elektronik Çözümler";
+
+            } else {
+
+                document.title = "Simercom | Industrial Automation and Electronic Solutions";
+
+            }
+
+
+            localStorage.setItem("simercomLanguage", language);
+
+        }
+
+
+        languageButtons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const language = button.dataset.language;
+
+                setLanguage(language);
+
+            });
+
+        });
+
+
+        const savedLanguage = localStorage.getItem("simercomLanguage") || "tr";
+
+        setLanguage(savedLanguage);
+
     </script>
 
 </body>
+
 </html>
