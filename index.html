@@ -7,7 +7,7 @@
 
     <title>Simercom | Endüstriyel Otomasyon ve Teknik Servis</title>
 
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/icon.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +16,28 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- SIMERCOM LOADING SCREEN -->
+    <div id="siteLoader" class="site-loader" aria-label="Site yükleniyor">
+        <div class="loader-grid"></div>
+        <div class="loader-content">
+            <div class="loader-logo-wrap">
+                <img src="images/logo.png" alt="Simercom" class="loader-logo">
+            </div>
+            <div class="loader-line"><span></span></div>
+            <div class="loader-meta">
+                <span>SİMERCOM</span>
+                <span id="loaderPercent">0%</span>
+            </div>
+        </div>
+    </div>
+
 
     <header class="navbar-wrapper">
 
@@ -92,8 +105,6 @@
 
     <main>
 
-        <!-- HERO -->
-
         <section class="hero" id="anasayfa">
 
             <div class="hero-grid-bg"></div>
@@ -105,23 +116,18 @@
                     <div class="hero-label">
                         <span></span>
 
-                        <p
-                            data-tr="ENDÜSTRİYEL OTOMASYON & TEKNİK SERVİS"
+                        <p data-tr="ENDÜSTRİYEL OTOMASYON & TEKNİK SERVİS"
                             data-en="INDUSTRIAL AUTOMATION & TECHNICAL SERVICE">
                             ENDÜSTRİYEL OTOMASYON & TEKNİK SERVİS
                         </p>
                     </div>
 
                     <h1>
-                        <span
-                            data-tr="Endüstriyel Sistemlerin"
-                            data-en="For the Continuous">
+                        <span data-tr="Endüstriyel Sistemlerin" data-en="For the Continuous">
                             Endüstriyel Sistemlerin
                         </span>
 
-                        <strong
-                            data-tr="Kesintisiz Çalışması İçin"
-                            data-en="Operation of Industrial Systems">
+                        <strong data-tr="Kesintisiz Çalışması İçin" data-en="Operation of Industrial Systems">
                             Kesintisiz Çalışması İçin
                         </strong>
                     </h1>
@@ -178,16 +184,11 @@
                 </div>
 
 
-                <!-- HERO IMAGE AREA -->
-
                 <div class="hero-visual">
 
                     <div class="hero-circle-large">
 
-                        <img
-                            id="largeHeroImage"
-                            src="images/muhendislik-1-b.jpg"
-                            alt="Simercom Endüstriyel Sistemler">
+                        <img id="largeHeroImage" src="images/muhendislik-1-b.jpg" alt="Simercom Endüstriyel Sistemler">
 
                         <div class="hero-image-overlay"></div>
 
@@ -206,10 +207,7 @@
 
                     <div class="hero-circle-small">
 
-                        <img
-                            id="smallHeroImage"
-                            src="images/motor-1-b.jpg"
-                            alt="Simercom Teknik Servis">
+                        <img id="smallHeroImage" src="images/motor-1-b.jpg" alt="Simercom Teknik Servis">
 
                     </div>
 
@@ -248,8 +246,6 @@
         </section>
 
 
-        <!-- QUICK SOLUTIONS -->
-
         <section class="quick-solutions">
 
             <div class="container">
@@ -263,14 +259,11 @@
                         <div>
                             <i class="bi bi-gear-wide-connected"></i>
 
-                            <strong
-                                data-tr="Servo & Sürücü Sistemleri"
-                                data-en="Servo & Drive Systems">
+                            <strong data-tr="Servo & Sürücü Sistemleri" data-en="Servo & Drive Systems">
                                 Servo & Sürücü Sistemleri
                             </strong>
 
-                            <p
-                                data-tr="Bakım, onarım ve teknik servis"
+                            <p data-tr="Bakım, onarım ve teknik servis"
                                 data-en="Maintenance, repair and technical service">
                                 Bakım, onarım ve teknik servis
                             </p>
@@ -286,15 +279,11 @@
                         <div>
                             <i class="bi bi-cpu"></i>
 
-                            <strong
-                                data-tr="PLC & Endüstriyel PC"
-                                data-en="PLC & Industrial PC">
+                            <strong data-tr="PLC & Endüstriyel PC" data-en="PLC & Industrial PC">
                                 PLC & Endüstriyel PC
                             </strong>
 
-                            <p
-                                data-tr="Kontrol ve otomasyon çözümleri"
-                                data-en="Control and automation solutions">
+                            <p data-tr="Kontrol ve otomasyon çözümleri" data-en="Control and automation solutions">
                                 Kontrol ve otomasyon çözümleri
                             </p>
                         </div>
@@ -309,15 +298,11 @@
                         <div>
                             <i class="bi bi-robot"></i>
 
-                            <strong
-                                data-tr="Robotik Sistemler"
-                                data-en="Robotic Systems">
+                            <strong data-tr="Robotik Sistemler" data-en="Robotic Systems">
                                 Robotik Sistemler
                             </strong>
 
-                            <p
-                                data-tr="Robotik sistem ve uygulamalar"
-                                data-en="Robotic systems and applications">
+                            <p data-tr="Robotik sistem ve uygulamalar" data-en="Robotic systems and applications">
                                 Robotik sistem ve uygulamalar
                             </p>
                         </div>
@@ -332,14 +317,11 @@
                         <div>
                             <i class="bi bi-tools"></i>
 
-                            <strong
-                                data-tr="Elektronik Onarım"
-                                data-en="Electronic Repair">
+                            <strong data-tr="Elektronik Onarım" data-en="Electronic Repair">
                                 Elektronik Onarım
                             </strong>
 
-                            <p
-                                data-tr="Elektronik kart ve ekipman onarımı"
+                            <p data-tr="Elektronik kart ve ekipman onarımı"
                                 data-en="Electronic board and equipment repair">
                                 Elektronik kart ve ekipman onarımı
                             </p>
@@ -354,8 +336,6 @@
         </section>
 
 
-        <!-- WHAT WE DO -->
-
         <section class="what-we-do section-padding" id="cozumler">
 
             <div class="container">
@@ -366,22 +346,18 @@
 
                     <div>
 
-                        <span class="section-label"
-                            data-tr="SİMERCOM NE YAPIYOR?"
-                            data-en="WHAT DOES SIMERCOM DO?">
+                        <span class="section-label" data-tr="SİMERCOM NE YAPIYOR?" data-en="WHAT DOES SIMERCOM DO?">
                             SİMERCOM NE YAPIYOR?
                         </span>
 
-                        <h2
-                            data-tr="Endüstriyel sistemleriniz için uçtan uca teknik çözümler."
+                        <h2 data-tr="Endüstriyel sistemleriniz için uçtan uca teknik çözümler."
                             data-en="End-to-end technical solutions for your industrial systems.">
                             Endüstriyel sistemleriniz için uçtan uca teknik çözümler.
                         </h2>
 
                     </div>
 
-                    <p
-                        data-tr="Arızanın tespitinden sistemin yeniden devreye alınmasına kadar teknik uzmanlığımızı çözümün her aşamasına taşıyoruz."
+                    <p data-tr="Arızanın tespitinden sistemin yeniden devreye alınmasına kadar teknik uzmanlığımızı çözümün her aşamasına taşıyoruz."
                         data-en="We bring our technical expertise to every stage of the solution, from fault detection to system commissioning.">
                         Arızanın tespitinden sistemin yeniden devreye alınmasına kadar teknik uzmanlığımızı
                         çözümün her aşamasına taşıyoruz.
@@ -400,14 +376,11 @@
                             <i class="bi bi-gear-wide-connected"></i>
                         </div>
 
-                        <h3
-                            data-tr="Servo & Sürücü"
-                            data-en="Servo & Drive">
+                        <h3 data-tr="Servo & Sürücü" data-en="Servo & Drive">
                             Servo & Sürücü
                         </h3>
 
-                        <p
-                            data-tr="Servo motorlar ve sürücü sistemlerinde arıza analizi, bakım, onarım ve teknik destek."
+                        <p data-tr="Servo motorlar ve sürücü sistemlerinde arıza analizi, bakım, onarım ve teknik destek."
                             data-en="Fault analysis, maintenance, repair and technical support for servo motors and drive systems.">
                             Servo motorlar ve sürücü sistemlerinde arıza analizi, bakım, onarım ve teknik destek.
                         </p>
@@ -427,14 +400,11 @@
                             <i class="bi bi-cpu"></i>
                         </div>
 
-                        <h3
-                            data-tr="PLC & Endüstriyel PC"
-                            data-en="PLC & Industrial PC">
+                        <h3 data-tr="PLC & Endüstriyel PC" data-en="PLC & Industrial PC">
                             PLC & Endüstriyel PC
                         </h3>
 
-                        <p
-                            data-tr="Kontrol sistemleri, PLC ve endüstriyel bilgisayarlarda teknik servis ve sistem desteği."
+                        <p data-tr="Kontrol sistemleri, PLC ve endüstriyel bilgisayarlarda teknik servis ve sistem desteği."
                             data-en="Technical service and system support for control systems, PLCs and industrial computers.">
                             Kontrol sistemleri, PLC ve endüstriyel bilgisayarlarda teknik servis ve sistem desteği.
                         </p>
@@ -454,14 +424,11 @@
                             <i class="bi bi-robot"></i>
                         </div>
 
-                        <h3
-                            data-tr="Robotik Teknolojiler"
-                            data-en="Robotic Technologies">
+                        <h3 data-tr="Robotik Teknolojiler" data-en="Robotic Technologies">
                             Robotik Teknolojiler
                         </h3>
 
-                        <p
-                            data-tr="Robotik sistemlerin bakım, kontrol, entegrasyon ve teknik çözüm süreçleri."
+                        <p data-tr="Robotik sistemlerin bakım, kontrol, entegrasyon ve teknik çözüm süreçleri."
                             data-en="Maintenance, control, integration and technical solutions for robotic systems.">
                             Robotik sistemlerin bakım, kontrol, entegrasyon ve teknik çözüm süreçleri.
                         </p>
@@ -481,14 +448,11 @@
                             <i class="bi bi-motherboard"></i>
                         </div>
 
-                        <h3
-                            data-tr="Elektronik Sistemler"
-                            data-en="Electronic Systems">
+                        <h3 data-tr="Elektronik Sistemler" data-en="Electronic Systems">
                             Elektronik Sistemler
                         </h3>
 
-                        <p
-                            data-tr="Elektronik kart ve endüstriyel ekipmanlarda arıza tespiti, onarım ve test süreçleri."
+                        <p data-tr="Elektronik kart ve endüstriyel ekipmanlarda arıza tespiti, onarım ve test süreçleri."
                             data-en="Fault detection, repair and testing of electronic boards and industrial equipment.">
                             Elektronik kart ve endüstriyel ekipmanlarda arıza tespiti, onarım ve test süreçleri.
                         </p>
@@ -505,8 +469,6 @@
 
         </section>
 
-
-        <!-- STATS -->
 
         <section class="stats-section">
 
@@ -564,8 +526,6 @@
         </section>
 
 
-        <!-- ABOUT -->
-
         <section class="about-section section-padding" id="kurumsal">
 
             <div class="container">
@@ -574,14 +534,13 @@
 
                     <div class="about-image">
 
-                        <img src="images/erisen-plaza-card.jpg"
-                            alt="Simercom">
+                        <img src="images/erisen-plaza-card.jpg" alt="Simercom">
 
                         <div class="about-image-badge">
 
-                            <span>SIM</span>
+                            <span>SIMER</span>
 
-                            <strong>ERCOM</strong>
+                            <strong>COM</strong>
 
                         </div>
 
@@ -590,20 +549,16 @@
 
                     <div class="about-content">
 
-                        <span class="section-label"
-                            data-tr="KURUMSAL"
-                            data-en="CORPORATE">
+                        <span class="section-label" data-tr="KURUMSAL" data-en="CORPORATE">
                             KURUMSAL
                         </span>
 
-                        <h2
-                            data-tr="Teknolojiye Değer, Üretime Güç Katıyoruz."
+                        <h2 data-tr="Teknolojiye Değer, Üretime Güç Katıyoruz."
                             data-en="Adding Value to Technology, Powering Production.">
                             Teknolojiye Değer, Üretime Güç Katıyoruz.
                         </h2>
 
-                        <p
-                            data-tr="Simercom; endüstriyel otomasyon, elektronik sistemler, teknik servis ve mühendislik alanlarında işletmelerin üretim süreçlerine teknik destek sağlayan bir çözüm ortağıdır."
+                        <p data-tr="Simercom; endüstriyel otomasyon, elektronik sistemler, teknik servis ve mühendislik alanlarında işletmelerin üretim süreçlerine teknik destek sağlayan bir çözüm ortağıdır."
                             data-en="Simercom is a solution partner providing technical support to businesses in industrial automation, electronic systems, technical service and engineering.">
                             Simercom; endüstriyel otomasyon, elektronik sistemler, teknik servis ve mühendislik
                             alanlarında işletmelerin üretim süreçlerine teknik destek sağlayan bir çözüm ortağıdır.
@@ -614,9 +569,7 @@
                             <div>
                                 <i class="bi bi-check2-circle"></i>
 
-                                <span
-                                    data-tr="Profesyonel Teknik Servis"
-                                    data-en="Professional Technical Service">
+                                <span data-tr="Profesyonel Teknik Servis" data-en="Professional Technical Service">
                                     Profesyonel Teknik Servis
                                 </span>
                             </div>
@@ -624,9 +577,7 @@
                             <div>
                                 <i class="bi bi-check2-circle"></i>
 
-                                <span
-                                    data-tr="Endüstriyel Sistem Uzmanlığı"
-                                    data-en="Industrial Systems Expertise">
+                                <span data-tr="Endüstriyel Sistem Uzmanlığı" data-en="Industrial Systems Expertise">
                                     Endüstriyel Sistem Uzmanlığı
                                 </span>
                             </div>
@@ -634,9 +585,7 @@
                             <div>
                                 <i class="bi bi-check2-circle"></i>
 
-                                <span
-                                    data-tr="Bakım & Onarım Çözümleri"
-                                    data-en="Maintenance & Repair Solutions">
+                                <span data-tr="Bakım & Onarım Çözümleri" data-en="Maintenance & Repair Solutions">
                                     Bakım & Onarım Çözümleri
                                 </span>
                             </div>
@@ -644,9 +593,7 @@
                             <div>
                                 <i class="bi bi-check2-circle"></i>
 
-                                <span
-                                    data-tr="AR-GE & Mühendislik"
-                                    data-en="R&D & Engineering">
+                                <span data-tr="AR-GE & Mühendislik" data-en="R&D & Engineering">
                                     AR-GE & Mühendislik
                                 </span>
                             </div>
@@ -672,8 +619,6 @@
         </section>
 
 
-        <!-- PROBLEM SOLUTION -->
-
         <section class="process-section section-padding" id="servis">
 
             <div class="technical-grid"></div>
@@ -686,22 +631,18 @@
 
                     <div>
 
-                        <span class="section-label"
-                            data-tr="TEKNİK SERVİS SÜRECİ"
-                            data-en="TECHNICAL SERVICE PROCESS">
+                        <span class="section-label" data-tr="TEKNİK SERVİS SÜRECİ" data-en="TECHNICAL SERVICE PROCESS">
                             TEKNİK SERVİS SÜRECİ
                         </span>
 
-                        <h2
-                            data-tr="Sorunu sadece çözmüyor, kaynağını analiz ediyoruz."
+                        <h2 data-tr="Sorunu sadece çözmüyor, kaynağını analiz ediyoruz."
                             data-en="We don't just solve the problem, we analyze its source.">
                             Sorunu sadece çözmüyor, kaynağını analiz ediyoruz.
                         </h2>
 
                     </div>
 
-                    <p
-                        data-tr="Her servis sürecinde sistemin gerçek problemini anlamaya, doğru müdahaleyi yapmaya ve kontrollü şekilde yeniden çalıştırmaya odaklanıyoruz."
+                    <p data-tr="Her servis sürecinde sistemin gerçek problemini anlamaya, doğru müdahaleyi yapmaya ve kontrollü şekilde yeniden çalıştırmaya odaklanıyoruz."
                         data-en="In every service process, we focus on understanding the real problem, applying the right intervention and restarting the system in a controlled manner.">
                         Her servis sürecinde sistemin gerçek problemini anlamaya, doğru müdahaleyi yapmaya ve
                         kontrollü şekilde yeniden çalıştırmaya odaklanıyoruz.
@@ -822,8 +763,6 @@
         </section>
 
 
-        <!-- WHY SIMERCOM -->
-
         <section class="why-section section-padding">
 
             <div class="container">
@@ -834,14 +773,11 @@
 
                     <div>
 
-                        <span class="section-label"
-                            data-tr="NEDEN SİMERCOM?"
-                            data-en="WHY SIMERCOM?">
+                        <span class="section-label" data-tr="NEDEN SİMERCOM?" data-en="WHY SIMERCOM?">
                             NEDEN SİMERCOM?
                         </span>
 
-                        <h2
-                            data-tr="Teknik uzmanlık, sistem yaklaşımı ve kontrollü süreç."
+                        <h2 data-tr="Teknik uzmanlık, sistem yaklaşımı ve kontrollü süreç."
                             data-en="Technical expertise, system approach and controlled process.">
                             Teknik uzmanlık, sistem yaklaşımı ve kontrollü süreç.
                         </h2>
@@ -863,8 +799,7 @@
                             Teknik Müdahale
                         </h3>
 
-                        <p
-                            data-tr="Endüstriyel ekipmanların arıza ve bakım süreçlerine teknik yaklaşım."
+                        <p data-tr="Endüstriyel ekipmanların arıza ve bakım süreçlerine teknik yaklaşım."
                             data-en="A technical approach to industrial equipment faults and maintenance processes.">
                             Endüstriyel ekipmanların arıza ve bakım süreçlerine teknik yaklaşım.
                         </p>
@@ -882,8 +817,7 @@
                             Sistem Odaklı Yaklaşım
                         </h3>
 
-                        <p
-                            data-tr="Tek bir parçaya değil, ekipmanın bağlı olduğu tüm sistemi değerlendiriyoruz."
+                        <p data-tr="Tek bir parçaya değil, ekipmanın bağlı olduğu tüm sistemi değerlendiriyoruz."
                             data-en="We evaluate not only a single component but the entire system it belongs to.">
                             Tek bir parçaya değil, ekipmanın bağlı olduğu tüm sistemi değerlendiriyoruz.
                         </p>
@@ -901,8 +835,7 @@
                             Kontrollü Test
                         </h3>
 
-                        <p
-                            data-tr="Onarım sonrasında ekipmanların kontrol ve test süreçlerini gerçekleştiriyoruz."
+                        <p data-tr="Onarım sonrasında ekipmanların kontrol ve test süreçlerini gerçekleştiriyoruz."
                             data-en="We perform control and testing processes after repair.">
                             Onarım sonrasında ekipmanların kontrol ve test süreçlerini gerçekleştiriyoruz.
                         </p>
@@ -920,10 +853,10 @@
                             Sürdürülebilir Çözüm
                         </h3>
 
-                        <p
-                            data-tr="Amacımız yalnızca mevcut arızayı gidermek değil, sistemin sağlıklı çalışmasına katkı sağlamaktır."
+                        <p data-tr="Amacımız yalnızca mevcut arızayı gidermek değil, sistemin sağlıklı çalışmasına katkı sağlamaktır."
                             data-en="Our goal is not only to solve the current fault but also to contribute to healthy system operation.">
-                            Amacımız yalnızca mevcut arızayı gidermek değil, sistemin sağlıklı çalışmasına katkı sağlamaktır.
+                            Amacımız yalnızca mevcut arızayı gidermek değil, sistemin sağlıklı çalışmasına katkı
+                            sağlamaktır.
                         </p>
 
                     </div>
@@ -935,8 +868,6 @@
         </section>
 
 
-        <!-- OUR WORK -->
-
         <section class="projects-section section-padding" id="calismalar">
 
             <div class="container">
@@ -947,22 +878,18 @@
 
                     <div>
 
-                        <span class="section-label"
-                            data-tr="GERÇEK ÇALIŞMALAR"
-                            data-en="OUR WORK">
+                        <span class="section-label" data-tr="GERÇEK ÇALIŞMALAR" data-en="OUR WORK">
                             GERÇEK ÇALIŞMALAR
                         </span>
 
-                        <h2
-                            data-tr="Teknik deneyimimizi sahada gösteriyoruz."
+                        <h2 data-tr="Teknik deneyimimizi sahada gösteriyoruz."
                             data-en="We demonstrate our technical experience in the field.">
                             Teknik deneyimimizi sahada gösteriyoruz.
                         </h2>
 
                     </div>
 
-                    <p
-                        data-tr="Servis, mühendislik, robotik ve AR-GE çalışmalarımızdan örnekler."
+                    <p data-tr="Servis, mühendislik, robotik ve AR-GE çalışmalarımızdan örnekler."
                         data-en="Examples from our service, engineering, robotics and R&D activities.">
                         Servis, mühendislik, robotik ve AR-GE çalışmalarımızdan örnekler.
                     </p>
@@ -978,15 +905,11 @@
 
                         <div class="project-overlay">
 
-                            <span
-                                data-tr="TEKNİK SERVİS"
-                                data-en="TECHNICAL SERVICE">
+                            <span data-tr="TEKNİK SERVİS" data-en="TECHNICAL SERVICE">
                                 TEKNİK SERVİS
                             </span>
 
-                            <h3
-                                data-tr="Motor Sistemleri"
-                                data-en="Motor Systems">
+                            <h3 data-tr="Motor Sistemleri" data-en="Motor Systems">
                                 Motor Sistemleri
                             </h3>
 
@@ -1003,15 +926,11 @@
 
                         <div class="project-overlay">
 
-                            <span
-                                data-tr="MÜHENDİSLİK"
-                                data-en="ENGINEERING">
+                            <span data-tr="MÜHENDİSLİK" data-en="ENGINEERING">
                                 MÜHENDİSLİK
                             </span>
 
-                            <h3
-                                data-tr="Mühendislik Çözümleri"
-                                data-en="Engineering Solutions">
+                            <h3 data-tr="Mühendislik Çözümleri" data-en="Engineering Solutions">
                                 Mühendislik Çözümleri
                             </h3>
 
@@ -1028,15 +947,11 @@
 
                         <div class="project-overlay">
 
-                            <span
-                                data-tr="ROBOTİK"
-                                data-en="ROBOTICS">
+                            <span data-tr="ROBOTİK" data-en="ROBOTICS">
                                 ROBOTİK
                             </span>
 
-                            <h3
-                                data-tr="Robotik Sistemler"
-                                data-en="Robotic Systems">
+                            <h3 data-tr="Robotik Sistemler" data-en="Robotic Systems">
                                 Robotik Sistemler
                             </h3>
 
@@ -1053,15 +968,11 @@
 
                         <div class="project-overlay">
 
-                            <span
-                                data-tr="AR-GE"
-                                data-en="R&D">
+                            <span data-tr="AR-GE" data-en="R&D">
                                 AR-GE
                             </span>
 
-                            <h3
-                                data-tr="Yeni Nesil Teknolojiler"
-                                data-en="Next Generation Technologies">
+                            <h3 data-tr="Yeni Nesil Teknolojiler" data-en="Next Generation Technologies">
                                 Yeni Nesil Teknolojiler
                             </h3>
 
@@ -1078,8 +989,6 @@
         </section>
 
 
-        <!-- WORKSHOPS -->
-
         <section class="workshops-section section-padding">
 
             <div class="container">
@@ -1090,14 +999,11 @@
 
                     <div>
 
-                        <span class="section-label"
-                            data-tr="ATÖLYELERİMİZ"
-                            data-en="OUR WORKSHOPS">
+                        <span class="section-label" data-tr="ATÖLYELERİMİZ" data-en="OUR WORKSHOPS">
                             ATÖLYELERİMİZ
                         </span>
 
-                        <h2
-                            data-tr="Teknik çözümün arkasındaki çalışma alanlarımız."
+                        <h2 data-tr="Teknik çözümün arkasındaki çalışma alanlarımız."
                             data-en="The technical workspaces behind our solutions.">
                             Teknik çözümün arkasındaki çalışma alanlarımız.
                         </h2>
@@ -1119,14 +1025,11 @@
 
                             <span>01</span>
 
-                            <h3
-                                data-tr="Siemens Sürücü Atölyemiz"
-                                data-en="Siemens Drive Workshop">
+                            <h3 data-tr="Siemens Sürücü Atölyemiz" data-en="Siemens Drive Workshop">
                                 Siemens Sürücü Atölyemiz
                             </h3>
 
-                            <p
-                                data-tr="Sürücü sistemleri üzerinde teknik inceleme, bakım ve onarım çalışmaları."
+                            <p data-tr="Sürücü sistemleri üzerinde teknik inceleme, bakım ve onarım çalışmaları."
                                 data-en="Technical inspection, maintenance and repair of drive systems.">
                                 Sürücü sistemleri üzerinde teknik inceleme, bakım ve onarım çalışmaları.
                             </p>
@@ -1146,14 +1049,11 @@
 
                             <span>02</span>
 
-                            <h3
-                                data-tr="Elektronik Atölyemiz"
-                                data-en="Electronics Workshop">
+                            <h3 data-tr="Elektronik Atölyemiz" data-en="Electronics Workshop">
                                 Elektronik Atölyemiz
                             </h3>
 
-                            <p
-                                data-tr="Elektronik kart ve endüstriyel ekipmanların inceleme ve onarım süreçleri."
+                            <p data-tr="Elektronik kart ve endüstriyel ekipmanların inceleme ve onarım süreçleri."
                                 data-en="Inspection and repair processes for electronic boards and industrial equipment.">
                                 Elektronik kart ve endüstriyel ekipmanların inceleme ve onarım süreçleri.
                             </p>
@@ -1173,14 +1073,11 @@
 
                             <span>03</span>
 
-                            <h3
-                                data-tr="Servo Motor Atölyemiz"
-                                data-en="Servo Motor Workshop">
+                            <h3 data-tr="Servo Motor Atölyemiz" data-en="Servo Motor Workshop">
                                 Servo Motor Atölyemiz
                             </h3>
 
-                            <p
-                                data-tr="Servo motorların teknik kontrol, bakım ve onarım işlemleri."
+                            <p data-tr="Servo motorların teknik kontrol, bakım ve onarım işlemleri."
                                 data-en="Technical inspection, maintenance and repair of servo motors.">
                                 Servo motorların teknik kontrol, bakım ve onarım işlemleri.
                             </p>
@@ -1200,14 +1097,11 @@
 
                             <span>04</span>
 
-                            <h3
-                                data-tr="PLC ve PC Atölyemiz"
-                                data-en="PLC & PC Workshop">
+                            <h3 data-tr="PLC ve PC Atölyemiz" data-en="PLC & PC Workshop">
                                 PLC ve PC Atölyemiz
                             </h3>
 
-                            <p
-                                data-tr="PLC, endüstriyel PC ve kontrol sistemleri üzerinde teknik çalışmalar."
+                            <p data-tr="PLC, endüstriyel PC ve kontrol sistemleri üzerinde teknik çalışmalar."
                                 data-en="Technical work on PLCs, industrial PCs and control systems.">
                                 PLC, endüstriyel PC ve kontrol sistemleri üzerinde teknik çalışmalar.
                             </p>
@@ -1223,159 +1117,7 @@
         </section>
 
 
-        <!-- HOW WE WORK -->
 
-        <section class="timeline-section section-padding">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div class="section-number">06</div>
-
-                    <div>
-
-                        <span class="section-label"
-                            data-tr="NASIL ÇALIŞIYORUZ?"
-                            data-en="HOW WE WORK">
-                            NASIL ÇALIŞIYORUZ?
-                        </span>
-
-                        <h2
-                            data-tr="Probleminizden çözüme giden yol."
-                            data-en="The path from your problem to the solution.">
-                            Probleminizden çözüme giden yol.
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline">
-
-                    <div class="timeline-item">
-
-                        <span>01</span>
-
-                        <div>
-
-                            <i class="bi bi-chat-dots"></i>
-
-                            <h3 data-tr="İletişim" data-en="Contact">
-                                İletişim
-                            </h3>
-
-                            <p
-                                data-tr="İhtiyacınızı ve mevcut problemi dinliyoruz."
-                                data-en="We listen to your needs and current problem.">
-                                İhtiyacınızı ve mevcut problemi dinliyoruz.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <span>02</span>
-
-                        <div>
-
-                            <i class="bi bi-search"></i>
-
-                            <h3 data-tr="Analiz" data-en="Analysis">
-                                Analiz
-                            </h3>
-
-                            <p
-                                data-tr="Sistemi ve arızanın kaynağını inceliyoruz."
-                                data-en="We examine the system and the source of the fault.">
-                                Sistemi ve arızanın kaynağını inceliyoruz.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <span>03</span>
-
-                        <div>
-
-                            <i class="bi bi-lightbulb"></i>
-
-                            <h3 data-tr="Çözüm" data-en="Solution">
-                                Çözüm
-                            </h3>
-
-                            <p
-                                data-tr="Uygulanabilir teknik çözümü belirliyoruz."
-                                data-en="We determine the applicable technical solution.">
-                                Uygulanabilir teknik çözümü belirliyoruz.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <span>04</span>
-
-                        <div>
-
-                            <i class="bi bi-check2-square"></i>
-
-                            <h3 data-tr="Test" data-en="Testing">
-                                Test
-                            </h3>
-
-                            <p
-                                data-tr="Onarım ve sistemi kontrol ediyoruz."
-                                data-en="We check the repair and the system.">
-                                Onarım ve sistemi kontrol ediyoruz.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="timeline-item">
-
-                        <span>05</span>
-
-                        <div>
-
-                            <i class="bi bi-power"></i>
-
-                            <h3 data-tr="Teslim" data-en="Delivery">
-                                Teslim
-                            </h3>
-
-                            <p
-                                data-tr="Sistemi kontrollü şekilde yeniden çalıştırıyoruz."
-                                data-en="We restart the system in a controlled manner.">
-                                Sistemi kontrollü şekilde yeniden çalıştırıyoruz.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- TECHNOLOGIES -->
 
         <section class="technologies-section">
 
@@ -1383,14 +1125,11 @@
 
                 <div class="technology-header">
 
-                    <span
-                        data-tr="UZMANLIK ALANLARIMIZ"
-                        data-en="OUR AREAS OF EXPERTISE">
+                    <span data-tr="UZMANLIK ALANLARIMIZ" data-en="OUR AREAS OF EXPERTISE">
                         UZMANLIK ALANLARIMIZ
                     </span>
 
-                    <h2
-                        data-tr="Endüstriyel teknolojilerde teknik çözüm."
+                    <h2 data-tr="Endüstriyel teknolojilerde teknik çözüm."
                         data-en="Technical solutions in industrial technologies.">
                         Endüstriyel teknolojilerde teknik çözüm.
                     </h2>
@@ -1437,8 +1176,6 @@
         </section>
 
 
-        <!-- R&D -->
-
         <section class="rd-section section-padding" id="arge">
 
             <div class="container">
@@ -1447,20 +1184,16 @@
 
                     <div class="rd-content">
 
-                        <span class="section-label"
-                            data-tr="AR-GE & MÜHENDİSLİK"
-                            data-en="R&D & ENGINEERING">
+                        <span class="section-label" data-tr="AR-GE & MÜHENDİSLİK" data-en="R&D & ENGINEERING">
                             AR-GE & MÜHENDİSLİK
                         </span>
 
-                        <h2
-                            data-tr="Bugünün sistemleri için değil, yarının çözümleri için de çalışıyoruz."
+                        <h2 data-tr="Bugünün sistemleri için değil, yarının çözümleri için de çalışıyoruz."
                             data-en="We work not only for today's systems, but also for tomorrow's solutions.">
                             Bugünün sistemleri için değil, yarının çözümleri için de çalışıyoruz.
                         </h2>
 
-                        <p
-                            data-tr="Mevcut sistemlerin geliştirilmesi, yeni projelerin oluşturulması ve endüstriyel ihtiyaçlara özel çözümlerin geliştirilmesi için mühendislik yaklaşımını çalışmalarımıza dahil ediyoruz."
+                        <p data-tr="Mevcut sistemlerin geliştirilmesi, yeni projelerin oluşturulması ve endüstriyel ihtiyaçlara özel çözümlerin geliştirilmesi için mühendislik yaklaşımını çalışmalarımıza dahil ediyoruz."
                             data-en="We integrate an engineering approach into our work to improve existing systems, develop new projects and create solutions tailored to industrial needs.">
                             Mevcut sistemlerin geliştirilmesi, yeni projelerin oluşturulması ve endüstriyel
                             ihtiyaçlara özel çözümlerin geliştirilmesi için mühendislik yaklaşımını
@@ -1536,8 +1269,6 @@
         </section>
 
 
-        <!-- SERVICE CTA -->
-
         <section class="service-cta">
 
             <div class="container">
@@ -1550,21 +1281,15 @@
 
                     <div class="cta-content">
 
-                        <span
-                            data-tr="TEKNİK SERVİS"
-                            data-en="TECHNICAL SERVICE">
+                        <span data-tr="TEKNİK SERVİS" data-en="TECHNICAL SERVICE">
                             TEKNİK SERVİS
                         </span>
 
-                        <h2
-                            data-tr="Makinenizde bir arıza mı var?"
-                            data-en="Is your machine experiencing a fault?">
+                        <h2 data-tr="Makinenizde bir arıza mı var?" data-en="Is your machine experiencing a fault?">
                             Makinenizde bir arıza mı var?
                         </h2>
 
-                        <p
-                            data-tr="Arızayı birlikte analiz edelim."
-                            data-en="Let's analyze the problem together.">
+                        <p data-tr="Arızayı birlikte analiz edelim." data-en="Let's analyze the problem together.">
                             Arızayı birlikte analiz edelim.
                         </p>
 
@@ -1572,9 +1297,7 @@
 
                     <a href="#iletisim" class="cta-button">
 
-                        <span
-                            data-tr="TEKNİK SERVİS TALEBİ OLUŞTUR"
-                            data-en="REQUEST TECHNICAL SERVICE">
+                        <span data-tr="TEKNİK SERVİS TALEBİ OLUŞTUR" data-en="REQUEST TECHNICAL SERVICE">
                             TEKNİK SERVİS TALEBİ OLUŞTUR
                         </span>
 
@@ -1589,8 +1312,6 @@
         </section>
 
 
-        <!-- CONTACT -->
-
         <section class="contact-section section-padding" id="iletisim">
 
             <div class="container">
@@ -1599,20 +1320,16 @@
 
                     <div class="contact-content">
 
-                        <span class="section-label"
-                            data-tr="İLETİŞİM"
-                            data-en="CONTACT">
+                        <span class="section-label" data-tr="İLETİŞİM" data-en="CONTACT">
                             İLETİŞİM
                         </span>
 
-                        <h2
-                            data-tr="Teknik çözüm için bizimle iletişime geçin."
+                        <h2 data-tr="Teknik çözüm için bizimle iletişime geçin."
                             data-en="Contact us for a technical solution.">
                             Teknik çözüm için bizimle iletişime geçin.
                         </h2>
 
-                        <p
-                            data-tr="Servis, bakım, onarım, otomasyon veya mühendislik ihtiyaçlarınız için Simercom ekibiyle iletişime geçebilirsiniz."
+                        <p data-tr="Servis, bakım, onarım, otomasyon veya mühendislik ihtiyaçlarınız için Simercom ekibiyle iletişime geçebilirsiniz."
                             data-en="You can contact the Simercom team for your service, maintenance, repair, automation or engineering needs.">
                             Servis, bakım, onarım, otomasyon veya mühendislik ihtiyaçlarınız için Simercom
                             ekibiyle iletişime geçebilirsiniz.
@@ -1701,8 +1418,6 @@
     </main>
 
 
-    <!-- FOOTER -->
-
     <footer class="footer">
 
         <div class="container">
@@ -1713,8 +1428,7 @@
 
                     <img src="images/logo.png" alt="Simercom">
 
-                    <p
-                        data-tr="Endüstriyel otomasyon, teknik servis, elektronik sistemler ve mühendislik çözümleri."
+                    <p data-tr="Endüstriyel otomasyon, teknik servis, elektronik sistemler ve mühendislik çözümleri."
                         data-en="Industrial automation, technical service, electronic systems and engineering solutions.">
                         Endüstriyel otomasyon, teknik servis, elektronik sistemler ve mühendislik çözümleri.
                     </p>
@@ -1817,54 +1531,68 @@
     </footer>
 
 
-    <!-- BACK TO TOP -->
-
     <button class="back-to-top" id="backToTop">
         <i class="bi bi-arrow-up"></i>
     </button>
 
-
     <script>
 
-        /* MOBILE MENU */
+        /* =========================
+           MOBİL MENÜ
+        ========================= */
 
         const mobileMenuBtn = document.getElementById("mobileMenuBtn");
         const navMenu = document.getElementById("navMenu");
 
-        mobileMenuBtn.addEventListener("click", () => {
+        if (mobileMenuBtn && navMenu) {
 
-            navMenu.classList.toggle("active");
+            mobileMenuBtn.addEventListener("click", () => {
 
-            const icon = mobileMenuBtn.querySelector("i");
-
-            if (navMenu.classList.contains("active")) {
-                icon.classList.remove("bi-list");
-                icon.classList.add("bi-x-lg");
-            } else {
-                icon.classList.remove("bi-x-lg");
-                icon.classList.add("bi-list");
-            }
-
-        });
-
-
-        document.querySelectorAll(".nav-menu a").forEach(link => {
-
-            link.addEventListener("click", () => {
-
-                navMenu.classList.remove("active");
+                navMenu.classList.toggle("active");
 
                 const icon = mobileMenuBtn.querySelector("i");
 
-                icon.classList.remove("bi-x-lg");
-                icon.classList.add("bi-list");
+                if (navMenu.classList.contains("active")) {
+
+                    icon.classList.remove("bi-list");
+                    icon.classList.add("bi-x-lg");
+
+                } else {
+
+                    icon.classList.remove("bi-x-lg");
+                    icon.classList.add("bi-list");
+
+                }
 
             });
 
-        });
+
+            document.querySelectorAll(".nav-menu a").forEach(link => {
+
+                link.addEventListener("click", () => {
+
+                    navMenu.classList.remove("active");
+
+                    const icon = mobileMenuBtn.querySelector("i");
+
+                    if (icon) {
+
+                        icon.classList.remove("bi-x-lg");
+                        icon.classList.add("bi-list");
+
+                    }
+
+                });
+
+            });
+
+        }
 
 
-        /* HERO IMAGE ROTATION */
+
+        /* =========================
+           HERO SLIDER
+        ========================= */
 
         const heroImages = [
 
@@ -1888,115 +1616,254 @@
 
         ];
 
+
         let heroIndex = 0;
 
-        const largeHeroImage = document.getElementById("largeHeroImage");
-        const smallHeroImage = document.getElementById("smallHeroImage");
-        const heroImageNumber = document.getElementById("heroImageNumber");
-        const heroImageTitle = document.getElementById("heroImageTitle");
+
+        const largeHeroImage =
+            document.getElementById("largeHeroImage");
+
+        const smallHeroImage =
+            document.getElementById("smallHeroImage");
+
+        const heroImageNumber =
+            document.getElementById("heroImageNumber");
+
+        const heroImageTitle =
+            document.getElementById("heroImageTitle");
+
+
+
+        /* İlk bilgileri kesin olarak ayarla */
+
+        function updateHeroInfo() {
+
+            if (!heroImageNumber || !heroImageTitle) {
+                return;
+            }
+
+            heroImageNumber.textContent =
+                `0${heroIndex + 1} / 0${heroImages.length}`;
+
+            heroImageTitle.textContent =
+                heroImages[heroIndex].title;
+
+        }
+
+
+
+        /* İlk görselleri kesin olarak ayarla */
+
+        function updateHeroImages() {
+
+            if (largeHeroImage) {
+
+                largeHeroImage.src =
+                    heroImages[heroIndex].large;
+
+            }
+
+            if (smallHeroImage) {
+
+                smallHeroImage.src =
+                    heroImages[heroIndex].small;
+
+            }
+
+            updateHeroInfo();
+
+        }
+
+
+
+        /* Slider */
 
         function changeHeroImages() {
+
+            if (!largeHeroImage || !smallHeroImage) {
+                return;
+            }
+
+
+            /* Eski görseli gizle */
 
             largeHeroImage.classList.add("changing");
             smallHeroImage.classList.add("changing");
 
+
             setTimeout(() => {
+
+                /* Bir sonraki görsele geç */
 
                 heroIndex++;
 
                 if (heroIndex >= heroImages.length) {
+
                     heroIndex = 0;
+
                 }
 
-                largeHeroImage.src = heroImages[heroIndex].large;
-                smallHeroImage.src = heroImages[heroIndex].small;
 
-                heroImageNumber.textContent =
-                    `0${heroIndex + 1} / 03`;
+                /* Görselleri değiştir */
 
-                heroImageTitle.textContent =
-                    heroImages[heroIndex].title;
+                largeHeroImage.src =
+                    heroImages[heroIndex].large;
+
+                smallHeroImage.src =
+                    heroImages[heroIndex].small;
+
+
+                /* DAİRENİN İÇİNDEKİ YAZILARI DEĞİŞTİR */
+
+                if (heroImageNumber) {
+
+                    heroImageNumber.textContent =
+                        `0${heroIndex + 1} / 0${heroImages.length}`;
+
+                }
+
+
+                if (heroImageTitle) {
+
+                    heroImageTitle.textContent =
+                        heroImages[heroIndex].title;
+
+                }
+
+
+                /* Yeni görseli göster */
 
                 largeHeroImage.classList.remove("changing");
                 smallHeroImage.classList.remove("changing");
 
-            }, 350);
+
+            }, 600);
 
         }
 
-        setInterval(changeHeroImages, 2000);
 
 
-        /* SCROLL ANIMATIONS */
+        /* Slider başlangıcı */
 
-        const animatedElements = document.querySelectorAll(
-            ".solution-card, .why-card, .project-card, .workshop-card, .timeline-item, .stat-item, .about-grid, .rd-grid"
-        );
+        updateHeroImages();
 
-        const observer = new IntersectionObserver(
-            (entries) => {
 
-                entries.forEach(entry => {
+        /* Her 5 saniyede bir değiş */
 
-                    if (entry.isIntersecting) {
+        setInterval(changeHeroImages, 5000);
 
-                        entry.target.classList.add("visible");
 
-                    }
+
+        /* =========================
+           SCROLL ANİMASYONLARI
+        ========================= */
+
+        const animatedElements =
+            document.querySelectorAll(
+                ".solution-card, .why-card, .project-card, .workshop-card, .timeline-item, .stat-item, .about-grid, .rd-grid"
+            );
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        animatedElements.forEach(element => {
+
+            observer.observe(element);
+
+        });
+
+
+
+        /* =========================
+           NAVBAR SCROLL
+        ========================= */
+
+        const navbar =
+            document.querySelector(".navbar-wrapper");
+
+
+        if (navbar) {
+
+            window.addEventListener("scroll", () => {
+
+                if (window.scrollY > 50) {
+
+                    navbar.classList.add("scrolled");
+
+                } else {
+
+                    navbar.classList.remove("scrolled");
+
+                }
+
+            });
+
+        }
+
+
+
+        /* =========================
+           YUKARI ÇIK
+        ========================= */
+
+        const backToTop =
+            document.getElementById("backToTop");
+
+
+        if (backToTop) {
+
+            window.addEventListener("scroll", () => {
+
+                if (window.scrollY > 600) {
+
+                    backToTop.classList.add("show");
+
+                } else {
+
+                    backToTop.classList.remove("show");
+
+                }
+
+            });
+
+
+            backToTop.addEventListener("click", () => {
+
+                window.scrollTo({
+
+                    top: 0,
+                    behavior: "smooth"
 
                 });
 
-            },
-            {
-                threshold: 0.12
-            }
-        );
-
-        animatedElements.forEach(element => {
-            observer.observe(element);
-        });
-
-
-        /* NAVBAR SCROLL */
-
-        const navbar = document.querySelector(".navbar-wrapper");
-
-        window.addEventListener("scroll", () => {
-
-            if (window.scrollY > 50) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-
-        });
-
-
-        /* BACK TO TOP */
-
-        const backToTop = document.getElementById("backToTop");
-
-        window.addEventListener("scroll", () => {
-
-            if (window.scrollY > 600) {
-                backToTop.classList.add("show");
-            } else {
-                backToTop.classList.remove("show");
-            }
-
-        });
-
-        backToTop.addEventListener("click", () => {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
             });
 
-        });
+        }
 
 
-        /* LANGUAGE SYSTEM */
+
+        /* =========================
+           DİL SİSTEMİ
+        ========================= */
 
         let currentLanguage =
             localStorage.getItem("simercomLanguage") || "tr";
@@ -2006,78 +1873,159 @@
 
             currentLanguage = language;
 
+
             localStorage.setItem(
                 "simercomLanguage",
                 language
             );
 
-            document.documentElement.lang = language;
+
+            document.documentElement.lang =
+                language;
 
 
-            document.querySelectorAll("[data-tr]").forEach(element => {
+            document
+                .querySelectorAll("[data-tr]")
+                .forEach(element => {
 
-                const text =
-                    element.getAttribute(`data-${language}`);
-
-                if (text !== null) {
-
-                    element.textContent = text;
-
-                }
-
-            });
+                    const text =
+                        element.getAttribute(
+                            `data-${language}`
+                        );
 
 
-            document.querySelectorAll(".language-btn").forEach(button => {
+                    if (text !== null) {
 
-                button.classList.toggle(
-                    "active",
-                    button.dataset.language === language
-                );
+                        element.textContent = text;
 
-            });
+                    }
+
+                });
+
+
+            document
+                .querySelectorAll(".language-btn")
+                .forEach(button => {
+
+                    button.classList.toggle(
+                        "active",
+                        button.dataset.language === language
+                    );
+
+                });
+
+
+            /*
+                Dil değiştirildiğinde hero başlığını
+                slider'daki mevcut görsele göre tekrar ayarla.
+            */
+
+            updateHeroInfo();
 
         }
 
 
-        document.querySelectorAll(".language-btn").forEach(button => {
 
-            button.addEventListener("click", () => {
+        document
+            .querySelectorAll(".language-btn")
+            .forEach(button => {
 
-                const language =
-                    button.dataset.language;
+                button.addEventListener("click", () => {
 
-                setLanguage(language);
+                    const language =
+                        button.dataset.language;
+
+                    setLanguage(language);
+
+                });
 
             });
-
-        });
 
 
         setLanguage(currentLanguage);
 
 
-        /* SMOOTH SCROLL */
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        /* =========================
+           YUMUŞAK SCROLL
+        ========================= */
 
-            anchor.addEventListener("click", function (event) {
+        document
+            .querySelectorAll('a[href^="#"]')
+            .forEach(anchor => {
 
-                const target =
-                    document.querySelector(this.getAttribute("href"));
+                anchor.addEventListener(
+                    "click",
+                    function (event) {
 
-                if (!target) return;
+                        const target =
+                            document.querySelector(
+                                this.getAttribute("href")
+                            );
 
-                event.preventDefault();
 
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
+                        if (!target) {
+                            return;
+                        }
+
+
+                        event.preventDefault();
+
+
+                        target.scrollIntoView({
+
+                            behavior: "smooth",
+                            block: "start"
+
+                        });
+
+                    }
+                );
 
             });
 
-        });
+
+        /* =========================
+           SAYFA YÜKLEME EKRANI
+        ========================= */
+        (function () {
+            const loader = document.getElementById("siteLoader");
+            const percent = document.getElementById("loaderPercent");
+            if (!loader) return;
+
+            const startTime = Date.now();
+            const minimumDuration = 3000; // Yükleme ekranı en az 3 saniye görünsün
+            let progress = 0;
+
+            const timer = setInterval(() => {
+                progress += Math.floor(Math.random() * 3) + 2;
+                if (progress >= 92) progress = 92;
+                percent.textContent = progress + "%";
+                if (progress >= 92) clearInterval(timer);
+            }, 100);
+
+            const hideLoader = () => {
+                const elapsed = Date.now() - startTime;
+                const remaining = Math.max(0, minimumDuration - elapsed);
+
+                clearInterval(timer);
+
+                setTimeout(() => {
+                    percent.textContent = "100%";
+                    setTimeout(() => {
+                        loader.classList.add("loaded");
+                        document.body.classList.add("site-ready");
+                        setTimeout(() => loader.remove(), 750);
+                    }, 180);
+                }, remaining);
+            };
+
+            if (document.readyState === "complete") {
+                hideLoader();
+            } else {
+                window.addEventListener("load", hideLoader, { once: true });
+            }
+        })();
 
     </script>
 
