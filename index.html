@@ -1581,7 +1581,9 @@
 
             <div class="footer-bottom">
 
-                <span>
+                <span
+                    data-tr="© 2026 Simercom. Tüm hakları saklıdır."
+                    data-en="© 2026 Simercom. All rights reserved.">
                     © 2026 Simercom. Tüm hakları saklıdır.
                 </span>
 
@@ -1656,6 +1658,11 @@
 
 
         /* =========================
+           DİL SİSTEMİ - SLIDERDAN ÖNCE TANIMLANMALI
+        ========================= */
+        let currentLanguage = localStorage.getItem("simercomLanguage") || "tr";
+
+        /* =========================
            HERO SLIDER
         ========================= */
 
@@ -1664,19 +1671,22 @@
             {
                 large: "images/muhendislik-1-b.jpg",
                 small: "images/motor-1-b.jpg",
-                title: "MÜHENDİSLİK"
+                titleTr: "MÜHENDİSLİK",
+                titleEn: "ENGINEERING"
             },
 
             {
                 large: "images/robot-2.jpg",
                 small: "images/muhendislik-1-b.jpg",
-                title: "ROBOTİK"
+                titleTr: "ROBOTİK",
+                titleEn: "ROBOTICS"
             },
 
             {
                 large: "images/motor-1-b.jpg",
                 small: "images/robot-2.jpg",
-                title: "TEKNİK SERVİS"
+                titleTr: "TEKNİK SERVİS",
+                titleEn: "TECHNICAL SERVICE"
             }
 
         ];
@@ -1711,7 +1721,9 @@
                 `0${heroIndex + 1} / 0${heroImages.length}`;
 
             heroImageTitle.textContent =
-                heroImages[heroIndex].title;
+                currentLanguage === "en"
+                    ? heroImages[heroIndex].titleEn
+                    : heroImages[heroIndex].titleTr;
 
         }
 
@@ -1930,7 +1942,7 @@
            DİL SİSTEMİ
         ========================= */
 
-        let currentLanguage =
+        currentLanguage =
             localStorage.getItem("simercomLanguage") || "tr";
 
 
