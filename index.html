@@ -1581,9 +1581,7 @@
 
             <div class="footer-bottom">
 
-                <span
-                    data-tr="© 2026 Simercom. Tüm hakları saklıdır."
-                    data-en="© 2026 Simercom. All rights reserved.">
+                <span data-tr="© 2026 Simercom. Tüm hakları saklıdır." data-en="© 2026 Simercom. All rights reserved.">
                     © 2026 Simercom. Tüm hakları saklıdır.
                 </span>
 
@@ -1619,15 +1617,19 @@
 
                 const icon = mobileMenuBtn.querySelector("i");
 
-                if (navMenu.classList.contains("active")) {
+                if (icon) {
 
-                    icon.classList.remove("bi-list");
-                    icon.classList.add("bi-x-lg");
+                    if (navMenu.classList.contains("active")) {
 
-                } else {
+                        icon.classList.remove("bi-list");
+                        icon.classList.add("bi-x-lg");
 
-                    icon.classList.remove("bi-x-lg");
-                    icon.classList.add("bi-list");
+                    } else {
+
+                        icon.classList.remove("bi-x-lg");
+                        icon.classList.add("bi-list");
+
+                    }
 
                 }
 
@@ -1658,9 +1660,92 @@
 
 
         /* =========================
-           DİL SİSTEMİ - SLIDERDAN ÖNCE TANIMLANMALI
+           DİL SİSTEMİ
         ========================= */
-        let currentLanguage = localStorage.getItem("simercomLanguage") || "tr";
+
+        let currentLanguage =
+            localStorage.getItem("simercomLanguage") || "tr";
+
+
+        function setLanguage(language) {
+
+            currentLanguage = language;
+
+            localStorage.setItem(
+                "simercomLanguage",
+                language
+            );
+
+            document.documentElement.lang = language;
+
+
+            /*
+               Sayfadaki data-tr / data-en
+               bulunan tüm yazıları değiştir
+            */
+
+            document
+                .querySelectorAll("[data-tr][data-en]")
+                .forEach(element => {
+
+                    const text =
+                        element.getAttribute(
+                            `data-${language}`
+                        );
+
+                    if (text !== null) {
+
+                        element.textContent = text;
+
+                    }
+
+                });
+
+
+            /*
+               Dil butonlarının active durumunu değiştir
+            */
+
+            document
+                .querySelectorAll(".language-btn")
+                .forEach(button => {
+
+                    button.classList.toggle(
+                        "active",
+                        button.dataset.language === language
+                    );
+
+                });
+
+
+            /*
+               Slider yazısını da yeni dile göre güncelle
+            */
+
+            updateHeroInfo();
+
+        }
+
+
+
+        /* Dil butonları */
+
+        document
+            .querySelectorAll(".language-btn")
+            .forEach(button => {
+
+                button.addEventListener("click", () => {
+
+                    const language =
+                        button.dataset.language;
+
+                    setLanguage(language);
+
+                });
+
+            });
+
+
 
         /* =========================
            HERO SLIDER
@@ -1671,6 +1756,7 @@
             {
                 large: "images/muhendislik-1-b.jpg",
                 small: "images/motor-1-b.jpg",
+
                 titleTr: "MÜHENDİSLİK",
                 titleEn: "ENGINEERING"
             },
@@ -1678,6 +1764,7 @@
             {
                 large: "images/robot-2.jpg",
                 small: "images/muhendislik-1-b.jpg",
+
                 titleTr: "ROBOTİK",
                 titleEn: "ROBOTICS"
             },
@@ -1685,6 +1772,7 @@
             {
                 large: "images/motor-1-b.jpg",
                 small: "images/robot-2.jpg",
+
                 titleTr: "TEKNİK SERVİS",
                 titleEn: "TECHNICAL SERVICE"
             }
@@ -1698,18 +1786,23 @@
         const largeHeroImage =
             document.getElementById("largeHeroImage");
 
+
         const smallHeroImage =
             document.getElementById("smallHeroImage");
 
+
         const heroImageNumber =
             document.getElementById("heroImageNumber");
+
 
         const heroImageTitle =
             document.getElementById("heroImageTitle");
 
 
 
-        /* İlk bilgileri kesin olarak ayarla */
+        /* =========================
+           SLIDER BİLGİSİNİ GÜNCELLE
+        ========================= */
 
         function updateHeroInfo() {
 
@@ -1717,8 +1810,22 @@
                 return;
             }
 
+
+            /*
+               Örnek:
+        
+               01 / 03
+               02 / 03
+               03 / 03
+            */
+
             heroImageNumber.textContent =
                 `0${heroIndex + 1} / 0${heroImages.length}`;
+
+
+            /*
+               Dile göre slider başlığı
+            */
 
             heroImageTitle.textContent =
                 currentLanguage === "en"
@@ -1729,7 +1836,9 @@
 
 
 
-        /* İlk görselleri kesin olarak ayarla */
+        /* =========================
+           SLIDER GÖRSELLERİNİ GÜNCELLE
+        ========================= */
 
         function updateHeroImages() {
 
@@ -1740,6 +1849,7 @@
 
             }
 
+
             if (smallHeroImage) {
 
                 smallHeroImage.src =
@@ -1747,13 +1857,16 @@
 
             }
 
+
             updateHeroInfo();
 
         }
 
 
 
-        /* Slider */
+        /* =========================
+           SLIDER DEĞİŞTİR
+        ========================= */
 
         function changeHeroImages() {
 
@@ -1762,7 +1875,9 @@
             }
 
 
-            /* Eski görseli gizle */
+            /*
+               Mevcut görsele geçiş efekti
+            */
 
             largeHeroImage.classList.add("changing");
             smallHeroImage.classList.add("changing");
@@ -1770,9 +1885,13 @@
 
             setTimeout(() => {
 
-                /* Bir sonraki görsele geç */
+
+                /*
+                   Bir sonraki görsele geç
+                */
 
                 heroIndex++;
+
 
                 if (heroIndex >= heroImages.length) {
 
@@ -1781,34 +1900,32 @@
                 }
 
 
-                /* Görselleri değiştir */
+                /*
+                   Büyük görsel
+                */
 
                 largeHeroImage.src =
                     heroImages[heroIndex].large;
+
+
+                /*
+                   Küçük görsel
+                */
 
                 smallHeroImage.src =
                     heroImages[heroIndex].small;
 
 
-                /* DAİRENİN İÇİNDEKİ YAZILARI DEĞİŞTİR */
+                /*
+                   Numara ve yazıyı güncelle
+                */
 
-                if (heroImageNumber) {
-
-                    heroImageNumber.textContent =
-                        `0${heroIndex + 1} / 0${heroImages.length}`;
-
-                }
+                updateHeroInfo();
 
 
-                if (heroImageTitle) {
-
-                    heroImageTitle.textContent =
-                        heroImages[heroIndex].title;
-
-                }
-
-
-                /* Yeni görseli göster */
+                /*
+                   Geçiş efektini kaldır
+                */
 
                 largeHeroImage.classList.remove("changing");
                 smallHeroImage.classList.remove("changing");
@@ -1820,14 +1937,22 @@
 
 
 
-        /* Slider başlangıcı */
+        /* =========================
+           SLIDER BAŞLANGICI
+        ========================= */
 
         updateHeroImages();
 
 
-        /* Her 5 saniyede bir değiş */
 
-        setInterval(changeHeroImages, 5000);
+        /*
+           Her 5 saniyede slider değişir
+        */
+
+        setInterval(
+            changeHeroImages,
+            5000
+        );
 
 
 
@@ -1843,6 +1968,7 @@
 
         const observer =
             new IntersectionObserver(
+
                 (entries) => {
 
                     entries.forEach(entry => {
@@ -1856,9 +1982,11 @@
                     });
 
                 },
+
                 {
                     threshold: 0.12
                 }
+
             );
 
 
@@ -1939,91 +2067,6 @@
 
 
         /* =========================
-           DİL SİSTEMİ
-        ========================= */
-
-        currentLanguage =
-            localStorage.getItem("simercomLanguage") || "tr";
-
-
-        function setLanguage(language) {
-
-            currentLanguage = language;
-
-
-            localStorage.setItem(
-                "simercomLanguage",
-                language
-            );
-
-
-            document.documentElement.lang =
-                language;
-
-
-            document
-                .querySelectorAll("[data-tr]")
-                .forEach(element => {
-
-                    const text =
-                        element.getAttribute(
-                            `data-${language}`
-                        );
-
-
-                    if (text !== null) {
-
-                        element.textContent = text;
-
-                    }
-
-                });
-
-
-            document
-                .querySelectorAll(".language-btn")
-                .forEach(button => {
-
-                    button.classList.toggle(
-                        "active",
-                        button.dataset.language === language
-                    );
-
-                });
-
-
-            /*
-                Dil değiştirildiğinde hero başlığını
-                slider'daki mevcut görsele göre tekrar ayarla.
-            */
-
-            updateHeroInfo();
-
-        }
-
-
-
-        document
-            .querySelectorAll(".language-btn")
-            .forEach(button => {
-
-                button.addEventListener("click", () => {
-
-                    const language =
-                        button.dataset.language;
-
-                    setLanguage(language);
-
-                });
-
-            });
-
-
-        setLanguage(currentLanguage);
-
-
-
-        /* =========================
            YUMUŞAK SCROLL
         ========================= */
 
@@ -2035,10 +2078,17 @@
                     "click",
                     function (event) {
 
+                        const href =
+                            this.getAttribute("href");
+
+
+                        if (!href || href === "#") {
+                            return;
+                        }
+
+
                         const target =
-                            document.querySelector(
-                                this.getAttribute("href")
-                            );
+                            document.querySelector(href);
 
 
                         if (!target) {
@@ -2062,46 +2112,195 @@
             });
 
 
+
+        /* =========================
+           SAYFA DİLİNİ BAŞLAT
+        ========================= */
+
+        setLanguage(currentLanguage);
+
+
+
         /* =========================
            SAYFA YÜKLEME EKRANI
         ========================= */
-        (function () {
-            const loader = document.getElementById("siteLoader");
-            const percent = document.getElementById("loaderPercent");
-            if (!loader) return;
 
-            const startTime = Date.now();
-            const minimumDuration = 3000; // Yükleme ekranı en az 3 saniye görünsün
+        (function () {
+
+            const loader =
+                document.getElementById("siteLoader");
+
+
+            const percent =
+                document.getElementById("loaderPercent");
+
+
+            if (!loader) {
+                return;
+            }
+
+
+            const startTime =
+                Date.now();
+
+
+            /*
+               Loader en az 3 saniye görünsün
+            */
+
+            const minimumDuration =
+                3000;
+
+
             let progress = 0;
 
-            const timer = setInterval(() => {
-                progress += Math.floor(Math.random() * 3) + 2;
-                if (progress >= 92) progress = 92;
-                percent.textContent = progress + "%";
-                if (progress >= 92) clearInterval(timer);
-            }, 100);
+
+            /*
+               Eğer percent elementi varsa
+               yüzdeyi artır
+            */
+
+            const timer =
+                setInterval(() => {
+
+                    /*
+                       2 - 4 arasında artış
+                    */
+
+                    progress +=
+                        Math.floor(
+                            Math.random() * 3
+                        ) + 2;
+
+
+                    /*
+                       %92'yi geçmesin
+                    */
+
+                    if (progress >= 92) {
+
+                        progress = 92;
+
+                    }
+
+
+                    if (percent) {
+
+                        percent.textContent =
+                            progress + "%";
+
+                    }
+
+
+                    if (progress >= 92) {
+
+                        clearInterval(timer);
+
+                    }
+
+                }, 100);
+
+
+
+            /*
+               Loader'ı kapat
+            */
 
             const hideLoader = () => {
-                const elapsed = Date.now() - startTime;
-                const remaining = Math.max(0, minimumDuration - elapsed);
+
+                const elapsed =
+                    Date.now() - startTime;
+
+
+                const remaining =
+                    Math.max(
+                        0,
+                        minimumDuration - elapsed
+                    );
+
 
                 clearInterval(timer);
 
+
                 setTimeout(() => {
-                    percent.textContent = "100%";
+
+
+                    /*
+                       %100 yap
+                    */
+
+                    if (percent) {
+
+                        percent.textContent =
+                            "100%";
+
+                    }
+
+
                     setTimeout(() => {
-                        loader.classList.add("loaded");
-                        document.body.classList.add("site-ready");
-                        setTimeout(() => loader.remove(), 750);
+
+
+                        /*
+                           Loader kapanma efekti
+                        */
+
+                        loader.classList.add(
+                            "loaded"
+                        );
+
+
+                        document.body.classList.add(
+                            "site-ready"
+                        );
+
+
+                        /*
+                           Tamamen DOM'dan kaldır
+                        */
+
+                        setTimeout(() => {
+
+                            loader.remove();
+
+                        }, 750);
+
+
                     }, 180);
+
+
                 }, remaining);
+
             };
 
-            if (document.readyState === "complete") {
+
+
+            /*
+               Sayfa zaten yüklendiyse
+            */
+
+            if (
+                document.readyState ===
+                "complete"
+            ) {
+
                 hideLoader();
+
             } else {
-                window.addEventListener("load", hideLoader, { once: true });
+
+                /*
+                   Sayfa tamamen yüklendiğinde
+                */
+
+                window.addEventListener(
+                    "load",
+                    hideLoader,
+                    {
+                        once: true
+                    }
+                );
+
             }
+
         })();
 
     </script>
